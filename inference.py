@@ -107,7 +107,7 @@ def main(args):
             folder_name += "_unpair"
         key_to_index_scale = {
             "cond_pixel_values_person": [1, 1],
-            # "cond_pixel_values_cloth": [2, 1],
+            "cond_pixel_values_cloth": [2, 1],
         }
         if args.use_reference:
             folder_name += "_ref"
@@ -119,7 +119,7 @@ def main(args):
 
         key_to_index_scale = {
             "cond_pixel_values_agnostic": [1, 1],
-            # "cond_pixel_values_cloth": [2, 1],
+            "cond_pixel_values_cloth": [2, 1],
         }
         if args.use_reference:
             folder_name += "_ref"

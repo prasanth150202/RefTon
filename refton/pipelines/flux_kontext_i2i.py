@@ -454,7 +454,6 @@ class FluxKontextPipelineI2I(
                 image_latent_height,
                 image_latent_width,
             )
-            print(key, image[key].shape, image_idx[0:5,:])
             image_ids.append(image_idx)
             image_latents.append(image_latent)
 

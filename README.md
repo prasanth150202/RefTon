@@ -11,7 +11,7 @@
 - [2025.10.11] Release inference code and LoRA weights on [Hugging Face](https://huggingface.co/qihoo360/RefVTON).
 - [2025.10.13] Release the technical report on [arXiv](https://arxiv.org/abs/2511.00956).
 - [2025.2.21] **Our RefTon is accepted by CVPR 2026 🎉🎉🎉**
-- [2026.3.28] Release the training code and [VRF datasets](https://huggingface.co/qihoo360).
+- [2026.3.28] Release the training code and [VRF datasets](https://huggingface.co/datasets/qihoo360/VRF-datasets).
 
 ## 💪 Why RefTon
 
@@ -76,7 +76,7 @@ Notes:
 - `images/` is optional for custom inference, but useful for visualization or future evaluation.
 
 
-One of the main advantages of `RefTon` is the use of a person image showing the target person wearing a different garment, together with a reference image showing the target garment on another body. Public try-on datasets such as VITON-HD and DressCode do not provide this signal by default, so we supplement these benchmarks with our generated person and reference images. You can download our `VRF` data from [Hugging Face](https://huggingface.co/qihoo360).
+One of the main advantages of `RefTon` is the use of a person image showing the target person wearing a different garment, together with a reference image showing the target garment on another body. Public try-on datasets such as VITON-HD and DressCode do not provide this signal by default, so we supplement these benchmarks with our generated person and reference images. You can download our `VRF` data from [Hugging Face](https://huggingface.co/datasets/qihoo360/VRF-datasets).
 
 For the [DressCode](https://github.com/aimagelab/dress-code) dataset, we currently provide only the processed images, such as refined agnostic, person, and reference images. Due to copyright restrictions, the original dataset is not redistributed in this repository. For the [VITON-HD](https://github.com/shadow2496/VITON-HD), [IGPairs](https://huggingface.co/datasets/IMAGDressing/IGPair), [ViViD](https://becauseimbatman0.github.io/ViViD), and [FashionTryon](https://fashiontryon.wixsite.com/fashiontryon) datasets, we provide only the necessary subsets, such as target, cloth, and agnostic images, and remove unused annotations such as masks and DensePose files. For the [DressCode](https://github.com/aimagelab/dress-code) dataset, we provide only the processed subsets, such as person, reference, and refined agnostic images, and exclude the unprocessed subsets, including cloth, target, mask, and others. Please obtain the original data from the official dataset sources listed in the acknowledgement section.
 
